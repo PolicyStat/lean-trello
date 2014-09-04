@@ -1,8 +1,8 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Lean Trello",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
+  "description": "Augment Trello with card lead time",
   "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -18,12 +18,12 @@
   },
   "options_page": "src/options_custom/index.html",
   "permissions": [
-    "https://trello.com/*"
+    "https://trello.com/b/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://trello.com/b/*"
       ],
       "css": [
         "src/inject/inject.css"
@@ -31,7 +31,7 @@
     },
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://trello.com/b/*"
       ],
       "js": [
         "src/inject/inject.js"
